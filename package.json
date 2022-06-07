@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "@stryker-mutator/core": "latest",
+    "@stryker-mutator/jest-runner": "latest",
+    "jest": "latest"
+  },
+  "scripts": {
+    "test": "NODE_OPTIONS='--experimental-vm-modules --experimental-specifier-resolution=node' jest",
+	"mutate": "NODE_OPTIONS=--experimental-vm-modules stryker run"
+  }
+}
